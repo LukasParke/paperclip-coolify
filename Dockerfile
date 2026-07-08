@@ -2,15 +2,15 @@
 # Build Paperclip from source instead of pulling a prebuilt image.
 # Defaults are pinned for reproducibility and can be overridden with build args.
 
-ARG NODE_IMAGE=node:lts-trixie-slim@sha256:45fbb3ca3b6c7e6646cd2889d0ac7bf314bb180036da792221fc2f48fe4d43fb
+ARG NODE_IMAGE=node:lts-trixie-slim@sha256:366fdef91728b1b7fa18c84fba63b6e79ed77b7e10cc206878e9705da4d7b169
 ARG PAPERCLIP_REPO=https://github.com/paperclipai/paperclip.git
-# v2026.609.0 release commit
-ARG PAPERCLIP_REF=a0f7d3dabaf5308ade45cae0c64ebd133948dca2
-ARG CLAUDE_CODE_VERSION=2.1.181
-ARG OPENAI_CODEX_VERSION=0.141.0
-ARG OPENCODE_AI_VERSION=1.17.8
-ARG GEMINI_CLI_VERSION=0.47.0
-ARG PI_CODING_AGENT_VERSION=0.79.6
+# v2026.707.0 release commit
+ARG PAPERCLIP_REF=390627b46eb333309d357004384b220ecf8a65af
+ARG CLAUDE_CODE_VERSION=2.1.204
+ARG OPENAI_CODEX_VERSION=0.143.0
+ARG OPENCODE_AI_VERSION=1.17.15
+ARG GEMINI_CLI_VERSION=0.49.0
+ARG PI_CODING_AGENT_VERSION=0.80.3
 
 FROM ${NODE_IMAGE} AS base
 ARG USER_UID=1000

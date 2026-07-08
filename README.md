@@ -29,11 +29,11 @@ The Dockerfile clones and builds Paperclip from source rather than using an upst
 | Build arg | Default | Description |
 |---|---|---|
 | `PAPERCLIP_REPO` | `https://github.com/paperclipai/paperclip.git` | Git repository to clone |
-| `PAPERCLIP_REF` | `a0f7d3dabaf5308ade45cae0c64ebd133948dca2` | Paperclip commit SHA for release `v2026.609.0` |
+| `PAPERCLIP_REF` | `390627b46eb333309d357004384b220ecf8a65af` | Paperclip commit SHA for release `v2026.707.0` |
 | `NODE_IMAGE` | pinned `node:lts-trixie-slim` digest | Base image |
 | `USER_UID` | `1000` | UID for the `node` user inside the container |
 | `USER_GID` | `1000` | GID for the `node` user inside the container |
-| `PI_CODING_AGENT_VERSION` | `0.79.6` | `@earendil-works/pi-coding-agent` version |
+| `PI_CODING_AGENT_VERSION` | `0.80.3` | `@earendil-works/pi-coding-agent` version |
 
 In Coolify you can set build arguments under **Resource → Configuration → Build Args**.
 
